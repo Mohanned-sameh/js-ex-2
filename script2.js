@@ -6,7 +6,7 @@ const $vTitle = document.getElementById('title')
 const $vAuthor = document.getElementById('author')
 const $vNum = document.getElementById('numOfPages')
 const $radio = document.querySelector('input[name="status"]:checked')
-const $books = document.getElementById('$bookss')
+const $books = document.getElementById('bookTitles')
 
 $pop.addEventListener('click' ,submit2)
 $cancel.addEventListener('click' ,$cancel)
@@ -56,7 +56,7 @@ function submit2() {
     $vAuthor.value = ''
     $vNum.value = ''
 }
-$radio cancel() {
+$cancel() {
 $show.classList.toggle('shownDiv')
 $show.setAttribute('id' , 'formDiv')
 }
