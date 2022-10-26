@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-exercise-2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Library</h1>
+    </header>
+    <main>
+        <div class="addBookBtn">
+            <p>Welcome To The Library Please Add Your Book</p>
+            <input type="button" name="addBook" id="addBook" value="+ Add Book">
+        </div>
+            <div id="formDiv" class="popup">
+                <form action="#" method="get" class="hiddenDiv">
+                        <label for="title">Insert Title</label>
+                        <input type="text" name="title" id="title" placeholder="Title Name" class="info">
+                        <label for="author">Insert author Name</label>
+                        <input type="text" name="author" id="author" placeholder="Author Name" class="info" >
+                        <label for="numOfPages">Insert number of pages</label>
+                        <input type="number" name="numOfPages" id="numOfPages" placeholder="Number of pages" class="info">
+                        <div class="readDiv">
+                            <h3>Did you read it?</h3>
+                            <label for="yesStatus">Yes,I have read the book</label>
+                            <input type="radio" name="status" id="yesStatus" class="info" value="already">
+                            <label for="noStatus">No,I have not read the book</label>
+                            <input type="radio" name="status" id="noStatus" class="info" value="not" checked>
+                        </div>
+                    </form>
+                    <div class="subcancel">
+                        <button type="submit" id="submit">Submit</button>
+                        <button type="button" id="cancel">cancel</button>
+                    </div>
+                </div>
+                <div id="bookTitles">
+                    
+                </div>
+        </main>
+</body>
+</html>
