@@ -47,21 +47,21 @@ header h1{
     background-color: #ddd;
     padding: 50px;
     border: 1px solid black;
-    position: relative;
     border-radius: 20px;
-    transition: all 1s ease-in-out;
-    width: 50%;
+    transition: all 1s ease;
+    width: 0%;
+    margin: auto;
 }
 .shownDiv{
+    margin: auto;
     visibility: visible;
     opacity: 1;
-    position: relative;
     background-color: #ddd;
     padding: 50px;
     border: 1px solid black;
     border-radius: 20px;
-    transition: all 1s ease-in-out;
-    width: 50%;
+    transition: all 1s ease;
+    width: 65%;
 }
 .shownDiv label , #formDiv label{
     margin-bottom: 5px;
