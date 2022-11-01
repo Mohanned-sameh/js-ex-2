@@ -16,19 +16,28 @@
         <div class="addBookBtn">
             <p>Welcome To The Library Please Add Your Book</p>
             <input type="button" name="addBook" id="addBook" value="+ Add Book">
+        </div>               
+        <div id="bookTitles">
+                    
         </div>
             <div id="formDiv" class="popup">
-                <form action="#" method="get" class="hiddenDiv">
+                <form action="#" method="get" class="hiddenDiv" novalidate>
                         <label for="title">Insert Title</label>
-                        <input type="text" name="title" id="title" placeholder="Title Name" class="info">
+                        <input type="text" name="title" id="title" placeholder="Title Name" class="info" required maxlength="12" minlength="6">
+                        <span class="error" aria-live="polite"></span>
+
                         <label for="author">Insert author Name</label>
-                        <input type="text" name="author" id="author" placeholder="Author Name" class="info" >
+                        <input type="text" name="author" id="author" placeholder="Author Name" class="info" required minlength="8">
+                        <span class="error" aria-live="polite"></span>
+
                         <label for="numOfPages">Insert number of pages</label>
-                        <input type="number" name="numOfPages" id="numOfPages" placeholder="Number of pages" class="info">
+                        <input type="number" name="numOfPages" id="numOfPages" placeholder="Number of pages" class="info"required minlength="5">
+                        <span class="error" aria-live="polite"></span>
+
                         <div class="readDiv">
                             <h3>Did you read it?</h3>
                             <label for="yesStatus">Yes,I have read the book</label>
-                            <input type="radio" name="status" id="yesStatus" class="info" value="already">
+                            <input type="radio" name="status" id="yesStatus" class="info" value="already" checked>
                             <label for="noStatus">No,I have not read the book</label>
                             <input type="radio" name="status" id="noStatus" class="info" value="not">
                         </div>
@@ -37,9 +46,6 @@
                         <button type="submit" id="submit">Submit</button>
                         <button type="button" id="cancel">cancel</button>
                     </div>
-                </div>
-                <div id="bookTitles">
-                    
                 </div>
         </main>
 </body>
